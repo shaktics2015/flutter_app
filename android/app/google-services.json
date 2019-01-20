@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "785114826950",
+    "firebase_url": "https://penta-e2537.firebaseio.com",
+    "project_id": "penta-e2537",
+    "storage_bucket": "penta-e2537.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785114826950:android:3d51e9b51d88bbc2",
+        "android_client_info": {
+          "package_name": "com.shaktiflutter.beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785114826950-3113agnqtvf1cd4co5p80lfiiou0hhrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7pMpwfJnwVQYyvE597dD9qUycbnS0A2g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
