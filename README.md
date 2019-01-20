@@ -1,16 +1,17 @@
-# flutter_app
+# Flutter App
+A start
 
-A new Flutter project.
 
-## Getting Started
+## Installation
+* Clone the repo by using git clone.
+* Configure Flutter(Developed on 1.1.10-pre.117) locally. 
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Feature Included
+1. Social Login(Google, Facebook, Email)
+1. User Profile ( User name, image from social login)
+1. Product Listing
+1. Order Saving
+1. Order listing
+ 
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
