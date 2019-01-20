@@ -1,7 +1,5 @@
 import '../models/product.dart';
-// {rating: 4.5, price: Rp 55.000, title: Buku Pintar Drafter Untuk Pemula Hingga Mahir, writer: Widada, pages: 200, image: assets/res/drafter.jpg}
-// {price: Rp 90.000, rating: 4.8, title: Penerapan Visualisasi 3D Dengan Autodesk Maya, writer: Dhani Ariatmanto, id: 5, image: assets/res/maya.jpeg, pages: 234}
-//{price: Rp 90.000, rating: 4.8, title: Penerapan Visualisasi 3D Dengan Autodesk Maya, writer: Dhani Ariatmanto, id: 5, image: assets/res/maya.jpeg, pages: 234}
+
 final List<Product> products = [
   Product(price: 'Rp 50.000', rating: 3.5, title: 'CorelDraw untuk Tingkat Pemula Sampai Mahir', writer: 'Jubilee Enterprise', id: 1, image: 'assets/res/corel.jpg', pages: 123, documentID:"1"),
   Product(price: 'Rp 55.000', rating: 4.5, title: 'Buku Pintar Drafter Untuk Pemula Hingga Mahir', writer: 'Widada', id: 2, image: 'assets/res/drafter.jpg', pages: 200, documentID:"2"),

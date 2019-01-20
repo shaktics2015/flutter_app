@@ -14,7 +14,7 @@ class DetailScreen extends StatelessWidget {
     final appBar = AppBar(
       elevation: .5,
       centerTitle: true,
-      title: Text('Product Details'), 
+      title: Text('Product Details'),
     );
 
     ///DetailScreen of product image and it's pages
@@ -26,7 +26,7 @@ class DetailScreen extends StatelessWidget {
             tag: product.title,
             child: Material(
               elevation: 15.0,
-              shadowColor:   AppColors.lightOrange,
+              shadowColor: AppColors.lightOrange,
               child: Image(
                 image: AssetImage(product.image),
                 fit: BoxFit.cover,
@@ -34,7 +34,7 @@ class DetailScreen extends StatelessWidget {
             ),
           ),
         ),
-        text('${product.pages} pages', color:   AppColors.lightBlack, size: 12)
+        text('${product.pages} pages', color: AppColors.lightBlack, size: 12)
       ],
     );
 
@@ -46,7 +46,7 @@ class DetailScreen extends StatelessWidget {
             size: 16, isBold: true, padding: EdgeInsets.only(top: 16.0)),
         text(
           'by ${product.writer}',
-          color:  AppColors.lightBlack,
+          color: AppColors.lightBlack,
           size: 12,
           padding: EdgeInsets.only(top: 8.0, bottom: 16.0),
         ),
@@ -60,12 +60,12 @@ class DetailScreen extends StatelessWidget {
             RatingBar(rating: product.rating)
           ],
         ),
-        SizedBox(height: 32.0), 
+        SizedBox(height: 32.0),
       ],
     );
 
     final topContent = Container(
-      color:  AppColors.lightOrange,
+      color: AppColors.lightOrange,
       padding: EdgeInsets.only(bottom: 16.0),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -77,7 +77,7 @@ class DetailScreen extends StatelessWidget {
     );
 
     ///scrolling text description
-    final bottomContent = Container( 
+    final bottomContent = Container(
       child: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
         child: Text(

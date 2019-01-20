@@ -70,7 +70,8 @@ class _OrderScreenState extends State<ProfileScreen> {
                       print(
                           'UserService().fetchUser snapshot widget.profilenew: ${widget.profile.toJson()}');
 
-                      return Center(child:Column(
+                      return Center(
+                          child: Column(
                         children: <Widget>[
                           widget.profile.thumbnailUrl != null
                               ? Container(
@@ -83,13 +84,13 @@ class _OrderScreenState extends State<ProfileScreen> {
                               : Padding(
                                   padding: EdgeInsets.all(0.0),
                                 ),
-                          new Text(""+"${widget.profile.username}",
+                          new Text("" + "${widget.profile.username}",
                               style: Theme.of(context).textTheme.display2),
-                          new Text(""+"${widget.profile.email}",
+                          new Text("" + "${widget.profile.email}",
                               style: Theme.of(context).textTheme.display1),
-                          new Text(""+"${widget.profile.mobile}",
+                          new Text("" + "${widget.profile.mobile}",
                               style: Theme.of(context).textTheme.display1),
-                          new Text(""+"${widget.profile.providerId}",
+                          new Text("" + "${widget.profile.providerId}",
                               style: Theme.of(context).textTheme.display1),
                         ],
                       ));

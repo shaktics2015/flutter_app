@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import '../app/app_colors.dart';
+import 'package:flutter/material.dart'; 
 
 class RatingBar extends StatelessWidget {
   final int starCount;
@@ -7,9 +6,7 @@ class RatingBar extends StatelessWidget {
   final Color color;
 
   RatingBar(
-      {this.starCount = 5, this.rating = 0.0, this.color = Colors.black87});
-
-  ///create star
+      {this.starCount = 5, this.rating = 0.0, this.color = Colors.black87}); 
   Widget buildStar(BuildContext context, int index) {
     IconData icName = Icons.star;
     Color icColor = color;

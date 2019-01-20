@@ -107,7 +107,9 @@ class CommonLoginMixin {
               userInfo.email != null ? userInfo.email : userInfo.phoneNumber,
               "STRING",
               preferences: _prefs);
-                      UserService().saveToSharedPreferences('login_type','GOOGLE', "STRING", preferences: _prefs);
+          UserService().saveToSharedPreferences(
+              'login_type', 'GOOGLE', "STRING",
+              preferences: _prefs);
 
           UserService().addUser(userObj);
           Navigator.of(context).pushReplacementNamed('/Products');
@@ -189,7 +191,9 @@ Declined permissions: ${accessToken.declinedPermissions}
         UserService().saveToSharedPreferences('email',
             user["email"] != null ? user["email"] : user["id"], "STRING",
             preferences: _prefs);
-        UserService().saveToSharedPreferences('login_type','FACEBOOK', "STRING", preferences: _prefs);
+        UserService().saveToSharedPreferences(
+            'login_type', 'FACEBOOK', "STRING",
+            preferences: _prefs);
         User userObj = User(
             email: user["email"],
             providerId: user["id"],

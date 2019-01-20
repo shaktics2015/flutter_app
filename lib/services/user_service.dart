@@ -58,24 +58,21 @@ class UserService {
     return (logged == "" || logged == null || logged == "null") ? false : true;
   }
 
-   Future<void> addUser(User user) async {  
-      Firestore.instance
-          .collection('user-${user.email??user.providerId }')
-          .add(user.toJson())
-          .then((res) {
-        print("addProduct res ${res.documentID}");
-      }).catchError((err) {
-        print("addProduct err $err");
-      }); 
+  Future<void> addUser(User user) async {
+    Firestore.instance
+        .collection('user-${user.email ?? user.providerId}')
+        .add(user.toJson())
+        .then((res) {
+      print("addProduct res ${res.documentID}");
+    }).catchError((err) {
+      print("addProduct err $err");
+    });
   }
 
-
-   Future<QuerySnapshot> fetchUser() async {  
-      final logged = await restorePreferences('email',
-          preferences: SharedPreferences.getInstance());
-          print("fetchUser logged: $logged");
-      return await Firestore.instance
-          .collection('user-$logged')
-        .getDocuments();
+  Future<QuerySnapshot> fetchUser() async {
+    final logged = await restorePreferences('email',
+        preferences: SharedPreferences.getInstance());
+    print("fetchUser logged: $logged");
+    return await Firestore.instance.collection('user-$logged').getDocuments();
   }
 }

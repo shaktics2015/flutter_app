@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart'; 
+import 'package:flutter/material.dart';
 import '../../data/products.dart';
 import '../Orders/index.dart';
 import '../../components/drawer.dart';
@@ -27,7 +27,7 @@ class _ProductScreenState extends State<ProductScreen> {
       if (res != null) {
         setState(() {
           res.documents.forEach((DocumentSnapshot element) {
-            element.data["documentID"]=element.documentID;
+            element.data["documentID"] = element.documentID;
             savedProducts.add(Product.fromJson(element.data));
             print("--------------------------------");
             print("fetchCart element.data ${element.data}");
@@ -82,8 +82,8 @@ class _ProductScreenState extends State<ProductScreen> {
                     child: Icon(Icons.add_shopping_cart,
                         size: 30.0,
                         color: savedProducts.contains(product)
-                            ?  AppColors.lightRed
-                            :  AppColors.lightGrey)),
+                            ? AppColors.lightRed
+                            : AppColors.lightGrey)),
                 padding: EdgeInsets.only(top: 2.0),
               )
             ],
@@ -91,7 +91,8 @@ class _ProductScreenState extends State<ProductScreen> {
         ),
         decoration: new BoxDecoration(
             border: new Border(
-                bottom: new BorderSide(color:  AppColors.lightGrey, width: 1.0))));
+                bottom:
+                    new BorderSide(color: AppColors.lightGrey, width: 1.0))));
   }
 
   @override
@@ -153,7 +154,7 @@ class _ProductScreenState extends State<ProductScreen> {
                   right: 7.0,
                   child: new Text(
                     "${savedProducts.length}",
-                    style: TextStyle(fontSize: 12.0, color:  AppColors.lightRed),
+                    style: TextStyle(fontSize: 12.0, color: AppColors.lightRed),
                   ),
                 )
               ]),

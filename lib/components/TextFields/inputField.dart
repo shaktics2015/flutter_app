@@ -38,14 +38,14 @@ class InputField extends StatelessWidget {
       this.focusNode});
 
   @override
-  Widget build(BuildContext context) {  
+  Widget build(BuildContext context) {
     return (new Container(
         margin: new EdgeInsets.only(bottom: bottomMargin),
         child: new DecoratedBox(
           decoration: new BoxDecoration(
-              borderRadius: new BorderRadius.all(new Radius.circular(0.0)), 
+              borderRadius: new BorderRadius.all(new Radius.circular(0.0)),
               color: textFieldColor),
-          child: new TextFormField( 
+          child: new TextFormField(
             style: textStyle,
             key: key,
             obscureText: obscureText,
@@ -57,17 +57,19 @@ class InputField extends StatelessWidget {
             enabled: enabled,
             focusNode: focusNode,
             decoration: new InputDecoration(
-            contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
+              contentPadding: const EdgeInsets.symmetric(vertical: 10.0),
               hintText: hintText,
               hintStyle: hintStyle,
               icon: new Icon(
                 icon,
                 color: iconColor,
               ),
-               border: new UnderlineInputBorder(
-                                    borderSide: BorderSide(color:  AppColors.white, 
-                                      width: 1.0, style: BorderStyle.none ), 
-               ),
+              border: new UnderlineInputBorder(
+                borderSide: BorderSide(
+                    color: AppColors.white,
+                    width: 1.0,
+                    style: BorderStyle.none),
+              ),
             ),
           ),
         )));

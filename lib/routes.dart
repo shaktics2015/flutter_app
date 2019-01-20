@@ -21,7 +21,7 @@ class Routes {
     runApp(new MaterialApp(
       title: "Flutter Assignment App",
       home: new Welcome(),
-      theme:  AppColors.appTheme,
+      theme: AppColors.appTheme,
       routes: routes,
       onGenerateRoute: (settings) => generateRoute(settings),
     ));

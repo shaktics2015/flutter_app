@@ -72,20 +72,17 @@ class AppDrawer extends StatelessWidget {
                   'FirebaseAuth.instance.signOut.then success loginType: $loginType');
               if (loginType == "DIRECT" && loginType == "GOOGLE") {
                 FirebaseAuth.instance.signOut().then((res) {
-                  print('FirebaseAuth.instance.signOut.then success'); 
+                  print('FirebaseAuth.instance.signOut.then success');
                 }).catchError((err) {
                   print('FirebaseAuth.instance.signOut.catchError : $err');
                 });
-              }else{
+              } else {
                 fbLogin.logOut();
               }
-                          UserService().logout('login_type', preferences: _prefs);
+              UserService().logout('login_type', preferences: _prefs);
 
-                                Navigator.of(context).pushReplacementNamed('/Login');
-
-            }).catchError((err) {});
-
-            // _confirm(context);
+              Navigator.of(context).pushReplacementNamed('/Login');
+            }).catchError((err) {}); 
           } else if (action == Action.account) {
             Navigator.pop(context);
             Navigator.push(

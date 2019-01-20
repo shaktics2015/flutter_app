@@ -11,7 +11,7 @@ class UserForm implements Model {
 class User implements Model {
   final String username;
   final String email;
-  final String password; 
+  final String password;
   final String thumbnailUrl;
   final String uid;
   final String providerId;
@@ -21,14 +21,14 @@ class User implements Model {
       {this.username,
       this.email,
       this.password,
-      this.thumbnailUrl, 
+      this.thumbnailUrl,
       this.uid,
       this.providerId,
       this.mobile});
 
   factory User.fromJson(Map<String, dynamic> json) {
     return new User(
-        username: json['displayName']?? json["username"],
+        username: json['displayName'] ?? json["username"],
         email: json['email'],
         password: json['password'],
         thumbnailUrl: json['thumbnailUrl'] ?? json['photoUrl'],
@@ -38,11 +38,11 @@ class User implements Model {
   }
   toJson() {
     return {
-      "username": username, 
+      "username": username,
       "email": email,
       "password": password,
       "thumbnailUrl": thumbnailUrl,
-      "uid":uid,
+      "uid": uid,
       "providerId": providerId,
       "mobile": mobile
     };
