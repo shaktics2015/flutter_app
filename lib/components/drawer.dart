@@ -72,7 +72,7 @@ class AppDrawer extends StatelessWidget {
                   'FirebaseAuth.instance.signOut.then success loginType: $loginType');
               if (loginType == "DIRECT" && loginType == "GOOGLE") {
                 FirebaseAuth.instance.signOut().then((res) {
-                  print('FirebaseAuth.instance.signOut.then success');
+                  print('FirebaseAuth.instance.signOut.then success'); 
                 }).catchError((err) {
                   print('FirebaseAuth.instance.signOut.catchError : $err');
                 });
